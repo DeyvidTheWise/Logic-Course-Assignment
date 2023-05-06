@@ -1,11 +1,9 @@
 chess_board = [[0]*8 for _ in range(8)]
 
 def attack(i, j):
-    #checking vertically and horizontally
     for k in range(0,8):
         if chess_board[i][k]==1 or chess_board[k][j]==1:
             return True
-    #checking diagonally
     for k in range(0,8):
         for l in range(0,8):
             if (k+l==i+j) or (k-l==i-j):
