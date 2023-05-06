@@ -181,3 +181,85 @@ Der RegalRuler Algorithmus ist ein origineller Algorithmus zur Lösung des Acht-
 - Es kann komplexer sein, ihn im Vergleich zu standardmäßigen DFS-Methoden zu implementieren.
 
 **Zeitkomplexität:** Hängt von der gewählten Heuristik und dem Problemfall ab.
+
+# Tower of Hanoi Problem
+
+The Tower of Hanoi is a classic puzzle that consists of three rods and a number of disks of different sizes, which can slide onto any rod. The puzzle starts with the disks in a neat stack in ascending order of size on one rod, the smallest at the top. The objective of the puzzle is to move the entire stack to another rod, obeying the following simple rules:
+
+1. Only one disk can be moved at a time.
+2. Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack or on an empty rod.
+3. No disk may be placed on top of a smaller disk.
+
+## Existing Algorithms
+
+### Recursive Algorithm
+
+The recursive algorithm is a standard way to solve the Tower of Hanoi problem. It uses the concept of dividing the problem into smaller subproblems and solving them recursively.
+
+**Advantages:**
+
+- Easy to understand and implement.
+- The algorithm is proven to work.
+
+**Disadvantages:**
+
+- The algorithm is not suitable for large input sizes, as the number of moves grows exponentially with the number of disks.
+
+**Time complexity:** O(2^N - 1), where N is the number of disks.
+
+## DarkAbyss Algorithm
+
+The DarkAbyss algorithm is an original algorithm designed to solve the Tower of Hanoi problem. It uses a combination of heuristics and iterative methods to efficiently move the disks between the rods. The name "DarkAbyss" represents the depth and complexity of the problem, as well as the potential for innovative solutions to emerge from it.
+
+**Advantages:**
+
+- The DarkAbyss algorithm can be more efficient than the recursive algorithm for certain problem instances.
+- Incorporates heuristics, which can lead to quicker solutions.
+
+**Disadvantages:**
+
+- The algorithm's performance may vary depending on the choice of heuristic.
+- It may be more complex to implement than the recursive algorithm.
+
+**Time complexity:** Varies depending on the chosen heuristic and problem instance.
+
+# Türme von Hanoi Problem
+
+Der Turm von Hanoi ist ein klassisches Rätsel, das aus drei Stäben und einer Anzahl von Scheiben unterschiedlicher Größe besteht, die auf jeden Stab geschoben werden können. Das Rätsel beginnt mit den Scheiben in einem ordentlichen Stapel in aufsteigender Größe auf einem Stab, der kleinste oben. Ziel des Rätsels ist es, den gesamten Stapel auf einen anderen Stab zu bewegen und dabei die folgenden einfachen Regeln zu beachten:
+
+1. Es kann immer nur eine Scheibe auf einmal bewegt werden.
+2. Jeder Zug besteht darin, die obere Scheibe von einem der Stapel zu nehmen und sie auf einen anderen Stapel oder auf einen leeren Stab zu legen.
+3. Keine Scheibe darf auf eine kleinere Scheibe gelegt werden.
+
+## Existierende Algorithmen
+
+### Rekursiver Algorithmus
+
+Der rekursive Algorithmus ist eine gängige Methode, um das Türme von Hanoi Problem zu lösen. Er verwendet das Konzept der Teilung des Problems in kleinere Teilprobleme und löst diese rekursiv.
+
+**Vorteile:**
+
+- Einfach zu verstehen und zu implementieren.
+- Der Algorithmus ist bewährt.
+
+**Nachteile:**
+
+- Der Algorithmus ist für große Eingabegrößen ungeeignet, da die Anzahl der Züge mit der Anzahl der Scheiben exponentiell wächst.
+
+**Zeitkomplexität:** O(2^N - 1), wobei N die Anzahl der Scheiben ist.
+
+## DarkAbyss-Algorithmus
+
+Der DarkAbyss-Algorithmus ist ein origineller Algorithmus, der entwickelt wurde, um das Türme von Hanoi-Problem zu lösen. Er verwendet eine Kombination aus Heuristiken und iterativen Methoden, um die Scheiben effizient zwischen den Stäben zu bewegen. Der Name "DarkAbyss" repräsentiert die Tiefe und Komplexität des Problems sowie das Potenzial für innovative Lösungen, die daraus entstehen können.
+
+**Vorteile:**
+
+- Der DarkAbyss-Algorithmus kann bei bestimmten Problemfällen effizienter sein als der rekursive Algorithmus.
+- Beinhaltet Heuristiken, die zu schnelleren Lösungen führen können.
+
+**Nachteile:**
+
+- Die Leistung des Algorithmus kann je nach Wahl der Heuristik variieren.
+- Es kann komplexer sein, ihn im Vergleich zum rekursiven Algorithmus zu implementieren.
+
+**Zeitkomplexität:** Hängt von der gewählten Heuristik und dem Problemfall ab.
