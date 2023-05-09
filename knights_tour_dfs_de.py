@@ -1,11 +1,13 @@
 import random
 
+# Schachbrett ausgeben
 def print_board():
     for row in chess_board:
         for cell in row:
             print(f"{cell:2}", end=" ")
         print()
 
+# Mögliche nächste Züge für den Springer erhalten
 def get_possibilities(x, y):
     pos_x = (2, 1, 2, 1, -2, -1, -2, -1)
     pos_y = (1, 2, -1, -2, 1, 2, -1, -2)
@@ -18,6 +20,7 @@ def get_possibilities(x, y):
 
     return possibilities
 
+# Löse das Rittersprung-Problem mit DFS und Warnsdorffs Regel
 def knight_tour_dfs(x, y, move_count):
     if move_count > 64:
         return True
@@ -33,14 +36,14 @@ def knight_tour_dfs(x, y, move_count):
 
     return False
 
-# Reset the chessboard
+# Schachbrett zurücksetzen
 chess_board = [[0 for _ in range(8)] for _ in range(8)]
 
-# Choose random starting position
+# Zufällige Startposition auswählen
 start_x, start_y = random.randint(0, 7), random.randint(0, 7)
 chess_board[start_x][start_y] = 1
 
-# Solve the Knight's Tour problem using DFS with Warnsdorff's Rule
+# Löse das Rittersprung-Problem mit DFS und Warnsdorffs Regel
 if knight_tour_dfs(start_x, start_y, 2):
     print("Solution found with random starting position:")
     print_board()

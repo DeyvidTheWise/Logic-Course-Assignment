@@ -1,19 +1,18 @@
-# Initialisiere das Schachbrett
-chess_board = [[1,0,0,0,0,0,0,0],
-               [0,0,0,0,0,0,0,0],
-               [0,0,0,0,0,0,0,0],
-               [0,0,0,0,0,0,0,0],
-               [0,0,0,0,0,0,0,0],
-               [0,0,0,0,0,0,0,0],
-               [0,0,0,0,0,0,0,0],
-               [0,0,0,0,0,0,0,0]]
+# Schachbrett initialisieren
+def create_board(start_x, start_y):
+    chess_board = [[0 for _ in range(8)] for _ in range(8)]
+    chess_board[start_x][start_y] = 1
+    return chess_board
+
+start_x, start_y = 0, 0
+chess_board = create_board(start_x, start_y)
 
 # Funktion zum Ausgeben des Schachbretts
 def print_board():
-    for i in range(8):
-        for j in range(8):
-            print(chess_board[i][j], end=" ")
-        print("\n")
+    for row in chess_board:
+        for cell in row:
+            print(f"{cell:2}", end=" ")
+        print()
 
 # Funktion zum Ermitteln der möglichen Züge für den Springer in der Position (x, y)
 def get_possibilities(x, y):
