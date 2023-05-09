@@ -1,3 +1,4 @@
+# Initialize the chess board
 chess_board = [[1,0,0,0,0,0,0,0],
                [0,0,0,0,0,0,0,0],
                [0,0,0,0,0,0,0,0],
@@ -7,13 +8,15 @@ chess_board = [[1,0,0,0,0,0,0,0],
                [0,0,0,0,0,0,0,0],
                [0,0,0,0,0,0,0,0]]
 
+# Function to print the chess board
 def print_board():
     for i in range(8):
         for j in range(8):
             print(chess_board[i][j], end=" ")
         print("\n")
 
-def get_possibilities(x,y):
+# Function to get the possible moves for the knight at position (x, y)
+def get_possibilities(x, y):
     pos_x = (2, 1, 2, 1, -2, -1, -2, -1)
     pos_y = (1, 2, -1,-2, 1, 2, -1, -2)
     possibilities = []
@@ -23,11 +26,12 @@ def get_possibilities(x,y):
 
     return possibilities
 
+# Function to solve the knight's tour problem
 def solve():
     counter = 2
     x = 0
     y = 0
-    for i in range(63):
+    for _ in range(63):
         pos = get_possibilities(x, y)
         minimum = pos[0]
         for p in pos:
@@ -38,5 +42,6 @@ def solve():
         chess_board[x][y] = counter
         counter += 1
 
+# Solve the knight's tour problem and print the resulting chess board
 solve()
 print_board()
