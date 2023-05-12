@@ -156,7 +156,7 @@ Die Tiefensuche (DFS) ist ein Graphentraversierungsalgorithmus, der so weit wie 
 
 ## RegalRuler Algorithmus
 
-er RegalRuler-Algorithmus ist ein einzigartiger und innovativer Ansatz zur Lösung des 8-KöniginnenProblems. Er kombiniert die Konzepte der genetischen Algorithmen mit einer benutzerdefinierten
+Der RegalRuler-Algorithmus ist ein einzigartiger und innovativer Ansatz zur Lösung des 8-Königinnen Problems. Er kombiniert die Konzepte der genetischen Algorithmen mit einer benutzerdefinierten
 Fitnessfunktion und bietet so eine effiziente und effektive Lösung. Der Algorithmus trägt den Namen
 "RegalRuler", da es darum geht, Königinnen so auf dem Brett zu platzieren, dass keine Königin eine
 andere bedroht, was die königliche Natur der Königinnen symbolisiert.
