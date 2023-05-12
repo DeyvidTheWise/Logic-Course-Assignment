@@ -38,19 +38,13 @@ Breadth-First Search (BFS) is a graph traversal algorithm that visits all the ve
 
 ## ShadowWalker Algorithm
 
-The ShadowWalker algorithm is an original algorithm designed to solve the Knight's Tour problem. It uses a combination of heuristics and backtracking to find a valid sequence of moves for the knight. The name "ShadowWalker" is meant to evoke a sense of stealth and agility, reflecting the knight's ability to move in unconventional ways across the chessboard.
-
-**Advantages:**
-
-- The ShadowWalker algorithm incorporates heuristics, which can lead to more efficient search and quicker solutions.
-- It can be more efficient than traditional DFS and BFS for certain problem instances.
-
-**Disadvantages:**
-
-- The algorithm's performance may vary depending on the choice of heuristic.
-- It may be more complex to implement than standard DFS and BFS.
-
-**Time complexity:** Varies depending on the chosen heuristic and problem instance.
+ShadowWalker is an original algorithm for solving the knight's tour problem. The name ShadowWalker
+represents the stealthy and strategic nature of a knight moving on the chessboard. The algorithm uses
+a depth-first search approach combined with a heuristic prioritization of distance to the center.
+Prioritizing distance to the center causes the knight to explore the center of the board first, increasing
+the likelihood of finding a solution. This is because the central squares provide the knight with more
+move options and thus lead to more flexible paths. The time complexity of the ShadowWalker algorithm
+is O(8^N), where N is the number of squares on the chessboard, and the space complexity is O(N).
 
 # Springerproblem
 
@@ -92,19 +86,14 @@ Die Breitensuche (BFS) ist ein Graphentraversierungsalgorithmus, der alle Knoten
 
 ## ShadowWalker Algorithmus
 
-Der ShadowWalker Algorithmus ist ein origineller Algorithmus zur Lösung des Springerproblems. Er verwendet eine Kombination aus Heuristiken und Backtracking, um eine gültige Zugfolge für den Springer zu finden. Der Name "ShadowWalker" soll ein Gefühl von Heimlichkeit und Wendigkeit vermitteln, das die Fähigkeit des Springers widerspiegelt, sich auf unkonventionelle Weise über das Schachbrett zu bewegen.
-
-**Vorteile:**
-
-- Der ShadowWalker-Algorithmus beinhaltet Heuristiken, die zu einer effizienteren Suche und schnelleren Lösungen führen können.
-- Er kann bei bestimmten Problemfällen effizienter sein als herkömmliche DFS- und BFS-Methoden.
-
-**Nachteile:**
-
-- Die Leistung des Algorithmus kann je nach Wahl der Heuristik variieren.
-- Es kann komplexer sein, ihn im Vergleich zu standardmäßigen DFS- und BFS-Methoden zu implementieren.
-
-**Zeitkomplexität:** Hängt von der gewählten Heuristik und dem Problemfall ab.
+ShadowWalker ist ein origineller Algorithmus zur Lösung des Rittersprungproblems. Der Name
+ShadowWalker repräsentiert die heimliche und strategische Natur eines Ritters, der sich auf dem
+Schachbrett bewegt. Der Algorithmus verwendet einen Tiefensuche-Ansatz in Kombination mit einer
+heuristischen Priorisierung der Abstand zum Zentrum. Die Priorisierung der Abstand zum Zentrum führt
+dazu, dass der Ritter zuerst das Zentrum des Spielfelds erkundet, wodurch die Wahrscheinlichkeit, eine
+Lösung zu finden, erhöht wird. Dies liegt daran, dass die zentralen Felder dem Ritter mehr
+Zugmöglichkeiten bieten und so zu flexibleren Pfaden führen. Die Zeitkomplexität des ShadowWalker Algorithmus beträgt O(8^N), wobei N die Anzahl der Felder auf dem Schachbrett ist, und die
+Raumkomplexität beträgt O(N).
 
 # Eight Queens Problem
 
@@ -130,19 +119,18 @@ Depth-First Search (DFS) is a graph traversal algorithm that explores as far as 
 
 ## RegalRuler Algorithm
 
-The RegalRuler algorithm is an original algorithm designed to solve the Eight Queens problem. It uses a combination of heuristics and backtracking to find a valid arrangement of queens on the chessboard. The name "RegalRuler" is meant to evoke a sense of power and authority, reflecting the dominance of the queen piece in the game of chess.
-
-**Advantages:**
-
-- The RegalRuler algorithm incorporates heuristics, which can lead to more efficient search and quicker solutions.
-- It can be more efficient than traditional DFS for certain problem instances.
-
-**Disadvantages:**
-
-- The algorithm's performance may vary depending on the choice of heuristic.
-- It may be more complex to implement than standard DFS.
-
-**Time complexity:** Varies depending on the chosen heuristic and problem instance.
+The RegalRuler algorithm is a unique and innovative approach to solving the 8-queens problem. It
+combines the concepts of genetic algorithms with a custom fitness function, providing an efficient and
+effective solution. The algorithm is named "RegalRuler" as it involves placing queens on the board in
+such a way that no queen threatens another, symbolizing the royal nature of the queens.
+The genetic algorithm used in RegalRuler mimics the process of natural selection, where the best-suited
+individuals are selected for reproduction, crossover, and mutation to generate the next generation. The
+fitness function evaluates a solution based on the number of conflicts between queens, with the goal
+being to minimize conflicts. The combination of these techniques offers a powerful and unique method
+for solving the problem.
+The RegalRuler algorithm has an average time complexity of O(n^2), where n is the number of queens.
+However, this complexity can vary depending on the parameters used for the genetic algorithm, such as
+population size and mutation rate
 
 # Acht-Damen-Problem
 
@@ -168,19 +156,19 @@ Die Tiefensuche (DFS) ist ein Graphentraversierungsalgorithmus, der so weit wie 
 
 ## RegalRuler Algorithmus
 
-Der RegalRuler Algorithmus ist ein origineller Algorithmus zur Lösung des Acht-Damen-Problems. Er verwendet eine Kombination aus Heuristiken und Backtracking, um eine gültige Anordnung der Damen auf dem Schachbrett zu finden.
-
-**Vorteile:**
-
-- Der RegalRuler-Algorithmus beinhaltet Heuristiken, die zu einer effizienteren Suche und schnelleren Lösungen führen können.
-- Er kann bei bestimmten Problemfällen effizienter sein als herkömmliche DFS-Methoden.
-
-**Nachteile:**
-
-- Die Leistung des Algorithmus kann je nach Wahl der Heuristik variieren.
-- Es kann komplexer sein, ihn im Vergleich zu standardmäßigen DFS-Methoden zu implementieren.
-
-**Zeitkomplexität:** Hängt von der gewählten Heuristik und dem Problemfall ab.
+er RegalRuler-Algorithmus ist ein einzigartiger und innovativer Ansatz zur Lösung des 8-KöniginnenProblems. Er kombiniert die Konzepte der genetischen Algorithmen mit einer benutzerdefinierten
+Fitnessfunktion und bietet so eine effiziente und effektive Lösung. Der Algorithmus trägt den Namen
+"RegalRuler", da es darum geht, Königinnen so auf dem Brett zu platzieren, dass keine Königin eine
+andere bedroht, was die königliche Natur der Königinnen symbolisiert.
+Der im RegalRuler verwendete genetische Algorithmus ahmt den Prozess der natürlichen Selektion nach,
+bei dem die am besten geeigneten Individuen für Reproduktion, Crossover und Mutation ausgewählt
+werden, um die nächste Generation zu erzeugen. Die Fitnessfunktion bewertet eine Lösung anhand der
+Anzahl der Konflikte zwischen den Königinnen, wobei das Ziel darin besteht, die Konflikte zu minimieren.
+Die Kombination dieser Techniken bietet eine leistungsfähige und einzigartige Methode zur Lösung des
+Problems.
+Der RegalRuler-Algorithmus hat eine durchschnittliche Zeitkomplexität von O(n^2), wobei n die Anzahl
+der Königinnen ist. Diese Komplexität kann jedoch je nach den für den genetischen Algorithmus
+verwendeten Parametern, wie z. B. Populationsgröße und Mutationsrate, variieren.
 
 # Tower of Hanoi Problem
 
@@ -209,19 +197,11 @@ The recursive algorithm is a standard way to solve the Tower of Hanoi problem. I
 
 ## DarkAbyss Algorithm
 
-The DarkAbyss algorithm is an original algorithm designed to solve the Tower of Hanoi problem. It uses a combination of heuristics and iterative methods to efficiently move the disks between the rods. The name "DarkAbyss" represents the depth and complexity of the problem, as well as the potential for innovative solutions to emerge from it.
-
-**Advantages:**
-
-- The DarkAbyss algorithm can be more efficient than the recursive algorithm for certain problem instances.
-- Incorporates heuristics, which can lead to quicker solutions.
-
-**Disadvantages:**
-
-- The algorithm's performance may vary depending on the choice of heuristic.
-- It may be more complex to implement than the recursive algorithm.
-
-**Time complexity:** Varies depending on the chosen heuristic and problem instance.
+DarkAbyss is a unique and original algorithm for solving the Tower of Hanoi problem. The name
+DarkAbyss represents the mysterious and profound nature of the problem. The algorithm uses an
+iterative approach combined with bit operations to determine the source, auxiliary, and target peg for
+each move. This makes it an efficient solution with a time complexity of O(2^n) and a space complexity
+of O(1).
 
 # Türme von Hanoi Problem
 
@@ -250,16 +230,8 @@ Der rekursive Algorithmus ist eine gängige Methode, um das Türme von Hanoi Pro
 
 ## DarkAbyss-Algorithmus
 
-Der DarkAbyss-Algorithmus ist ein origineller Algorithmus, der entwickelt wurde, um das Türme von Hanoi-Problem zu lösen. Er verwendet eine Kombination aus Heuristiken und iterativen Methoden, um die Scheiben effizient zwischen den Stäben zu bewegen. Der Name "DarkAbyss" repräsentiert die Tiefe und Komplexität des Problems sowie das Potenzial für innovative Lösungen, die daraus entstehen können.
-
-**Vorteile:**
-
-- Der DarkAbyss-Algorithmus kann bei bestimmten Problemfällen effizienter sein als der rekursive Algorithmus.
-- Beinhaltet Heuristiken, die zu schnelleren Lösungen führen können.
-
-**Nachteile:**
-
-- Die Leistung des Algorithmus kann je nach Wahl der Heuristik variieren.
-- Es kann komplexer sein, ihn im Vergleich zum rekursiven Algorithmus zu implementieren.
-
-**Zeitkomplexität:** Hängt von der gewählten Heuristik und dem Problemfall ab.
+DarkAbyss ist ein einzigartiger und origineller Algorithmus zur Lösung des Turms von Hanoi Problems.
+Der Name DarkAbyss repräsentiert die mysteriöse und tiefe Natur des Problems. Der Algorithmus
+verwendet einen iterativen Ansatz in Kombination mit Bitoperationen, um den Ausgangs-, Hilfs- und
+Zielstab für jeden Zug zu bestimmen. Dies macht es zu einer effizienten Lösung mit einer Zeitkomplexität
+von O(2^n) und einer Raumkomplexität von O(1).
